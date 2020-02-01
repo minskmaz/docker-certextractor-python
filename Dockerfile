@@ -7,5 +7,4 @@ ENV SLEEP_TIME 86400
 
 COPY cert.py ./
 
-ENTRYPOINT ["python3"]
 CMD [ "python", "-u", "./cert.py" ]
