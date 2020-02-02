@@ -6,5 +6,4 @@ ENV ACME_FILE acme.json
 ENV SLEEP_TIME 86400
 
 COPY cert.py ./
-ENTRYPOINT ["python3"]
-CMD ["-u", "cert.py"]
+CMD ["python", "-u", "cert.py"]
