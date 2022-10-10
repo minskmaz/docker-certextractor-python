@@ -8,7 +8,7 @@ def main():
     cert_path = os.getenv('CERT_PATH', '/certs')
     acme_file = os.path.join(acme_path,os.getenv('ACME_FILE', 'acme.json'))
     sleep_time = int(os.getenv('SLEEP_TIME', '86400'))
-    acme_keys = os.getenv('ACME_KEY', 'le').split(',')
+    acme_keys = os.getenv('ACME_KEY', 'leresolver').split(',')
 
     acme_content_raw = ''
     print('Using acme file: '+acme_file)
